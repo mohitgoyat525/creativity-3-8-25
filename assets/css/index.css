@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg-obito {
+    background-image: url("../images/gif/obito.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    background: 50% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 10vw;
+    font-family: "Source Sans Pro", sans-serif;
+    animation: reveal 3s ease-in-out forwards 200ms,
+               glow 2.5s linear infinite 2s;
+}
+
+/* Ensure animations work properly */
+@keyframes reveal {
+    80% {
+        letter-spacing: 8px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #fff;
+    }
+}
