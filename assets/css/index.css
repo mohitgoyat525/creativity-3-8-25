@@ -32,7 +32,7 @@ h1 {
                glow 2.5s linear infinite 2s;
 }
 
-/* Ensure animations work properly */
+
 @keyframes reveal {
     80% {
         letter-spacing: 8px;
