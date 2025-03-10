@@ -27,7 +27,6 @@ h1 {
     background-clip: text;
     color: transparent;
     font-size: 10vw;
-    font-family: "Source Sans Pro", sans-serif;
     animation: reveal 3s ease-in-out forwards 200ms,
                glow 2.5s linear infinite 2s;
 }
